@@ -11,6 +11,14 @@ Strings are containers of text encoded in UTF-8.
 Strings are equivalent to []byte.
 In Go, the concept of a character is called a rune.
 Rune is an integer that represents a Unicode code point.
+
+To summarize, here are the salient points:
+
+Go source code is always UTF-8.
+A string holds arbitrary bytes.
+A string literal, absent byte-level escapes, always holds valid UTF-8 sequences.
+Those sequences represent Unicode code points, called runes.
+No guarantee is made in Go that characters in strings are normalized.
 */
 func strRunes() {
 	const s = "สวัสดี"

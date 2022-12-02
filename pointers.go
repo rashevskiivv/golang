@@ -12,7 +12,7 @@ func pointers() {
 	zeroptr(&i)
 	fmt.Println("zeroptr:", i)
 
-	fmt.Println("pointer:", &i)
+	fmt.Println("pointer:", &i) // for types can use new(Cat) for example
 }
 
 func zeroval(ival int) {

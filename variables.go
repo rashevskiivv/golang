@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func variables() {
-	var str = "initital"
+	var str string = "initital"
 	fmt.Println(str)
 
 	var num1, num2 = 1, 2
