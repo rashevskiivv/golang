@@ -30,6 +30,8 @@ func functions() {
 		return fib(n-1) + fib(n-2)
 	}
 	fmt.Println(fib(7))
+
+	fmt.Println(namedReturnValues())
 }
 
 func plus(a, b int) int {
@@ -51,6 +53,7 @@ func sum(nums ...int) int {
 }
 
 // closures
+// A closure is a function value that references variables from outside its body.
 func intSeq() func() int {
 	i := 0
 	return func() int {
@@ -65,4 +68,10 @@ func fact(n int) int {
 		return 1
 	}
 	return n * fact(n-1)
+}
+
+func namedReturnValues() (x, y int) {
+	x = 10
+	y = 11
+	return
 }
