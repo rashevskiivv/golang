@@ -1,4 +1,4 @@
-package gorm
+package golang
 
 import "fmt"
 
